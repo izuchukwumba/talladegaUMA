@@ -1,60 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>American Airllines</title>
 
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="mediaqueries.css"/>
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">American Airlines </div>
-        <div>
-          <ul class="nav-links">
-            <li><a href="#travelinformation">Travel Information</a></li>
-            <li><a href="#passengerstatus">Passenger Information</a></li>
-            <li><a href="#aadvantage">AAdvantage</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+      <div class="logo">American Airlines</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#travelinformation">Travel Information</a></li>
+          <li><a href="#passengerstatus">Passenger Information</a></li>
+          <li><a href="#aadvantage">AAdvantage</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="travel">
+      <div class="travel-container">
+        <img
+          class="image-ballom"
+          src="./assets/ballom.jpg"
+          alt="Ballom Picture"
+        />
+        <h1 class="title">Flight Information</h1>
+
+        <div class="section__text">
+          <p class="section__text__p1">Flight Distance</p>
+          <p class="section__text__p2">Distance Covered</p>
+          <p class="section__text__p3">Distance Left</p>
+          <p class="section__text__p4">Current Location</p>
+          <p class="section__text__p5">Expected Arrival Time</p>
         </div>
-      </nav>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="locattion.href='./#aadvantage'"
+      />
+    </section>
 
-      <section id="travel">
-        <div class="travel-container">
-
-
-<img class="image-ballom"  src="./assets/ballom.jpg" alt="Ballom Picture"/>
-<h1 class="title">Flight Information</h1>
-
-
-<div class="section__text">
-
-
-  <p class="section__text__p1"> Flight Distance </p>
-  <p class="section__text__p2">Distance Covered</p>
-  <p class="section__text__p3">Distance Left</p>
-  <p class="section__text__p4">Current Location</p>
-  <p class="section__text__p5">Expected Arrival Time</p>
-  
-          </div>
-</div>
-<img
-              src="./assets/arrow.png"
-              alt="Arrow icon"
-              class="icon arrow"
-              onclick="locattion.href='./#aadvantage'"
-            />
-      </section>
-
-
-
-
-
-
-   <!--  <nav id="hamburger-nav">
+    <!--  <nav id="hamburger-nav">
         <div class="logo">American Airlines ></div>
         <div class="hamburger-menu">
           <div class="hamburger-icon" onclick="toggleMenu()">
@@ -72,7 +64,7 @@
       </nav> 
     -->
 
-      <!--<section id="carousel">
+    <!--<section id="carousel">
 
         <div class="carousel-container">
             
@@ -204,7 +196,7 @@
 
 
 
-   <!--  <nav id="hamburger-nav">
+     <nav id="hamburger-nav">
         <div class="logo">American Airlines ></div>
         <div class="hamburger-menu">
           <div class="hamburger-icon" onclick="toggleMenu()">
@@ -222,7 +214,7 @@
       </nav> 
     -->
 
-      <!--<section id="carousel">
+    <!--<section id="carousel">
 
         <div class="carousel-container">
             
@@ -292,11 +284,9 @@
 </div>
 
 
-</sectin>
+</section>
 
-*/
-      <script>
-        src="script.js"
-      </script>
-</body>
+-->
+    <script src="script.js"></script>
+  </body>
 </html>
