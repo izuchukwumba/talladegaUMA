@@ -77,7 +77,12 @@ a,.btn{
     width: 1259px;
 }
 
+.arrow{
+position:absolute;
+right:5rem;
+bottom:2.5rem;
 
+}
 
 
 
