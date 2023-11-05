@@ -52,6 +52,44 @@
     }
   </style>
 </head>
+
+<header>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-container-1">
+                <div class="nav1-item home">Home</div>
+                <button class="login"> LOG&nbsp;IN </button>
+                <div class="nav1-item english">
+                    <img class="english-flag" src="../assets/english-flag.svg"/>
+                    <select id="dropdown" name="language">
+                        <option value="apple">English</option>
+                        <option value="banana">French</option>
+                        <option value="cherry">Spanish</option>
+                        <option value="orange">German</option>
+                        <option value="strawberry">Finnish</option>
+                    </select>
+                </div>
+
+                <div class="nav1-item search">
+                    <input
+                    type="search"
+                    id="search"
+                    name="query"
+                    placeholder="Search AA.com&reg"
+                    />
+                </div>
+            </div>
+
+            <div class="nav-container-2">
+                <img class="logo" src="../assets/aa-logo.png" />
+                <div class="nav2-item plan-travel">PLAN TRAVEL</div>
+                <div class="nav2-item travel-info">TRAVEL INFORMATION</div>
+                <div class="nav2-item advantage">AADVANTAGE</div>
+            </div>
+        </div>
+    </nav>
+</header>
+
 <body>
   <div class="container">
     <h1>Mapbox Embedded Map</h1>
@@ -66,16 +104,18 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css' rel='stylesheet' />
 
-  <!-- JavaScript code -->
+ 
   <script>
     // Mapbox access token
     mapboxgl.accessToken = 'sk.eyJ1IjoidGhhYmhlbG8iLCJhIjoiY2xva2Fhc2ozMGFraTJqcHA2anZyMGp5eSJ9.Z5hXKN03iyVxgcMK60QYmw';
 
-    // Initialize map
+    // Initialize map 
     var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/light-v10',
-      center: [longitude, latitude], // Set the initial center coordinates
+      center: [-122.4194, 37.7749], // Set the initial center coordinates (San Francisco)
+      pitch: 45, // Set the initial pitch
+      bearing: -17.6, // Set the initial bearing
       zoom: 12 // Set the initial zoom level
     });
 
