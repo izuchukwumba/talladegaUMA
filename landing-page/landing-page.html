@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="landing-page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <div class="nav-container-1">
+            <div class="nav1-item home">Home</div>
+            <button class="login">LOG&nbsp;IN</button>
+            <div class="nav1-item english">
+              <img class="english-flag" src="../assets/english-flag.svg" />
+              <select id="dropdown" name="language">
+                <option value="apple">English</option>
+                <option value="banana">French</option>
+                <option value="cherry">Spanish</option>
+                <option value="orange">German</option>
+                <option value="strawberry">Finnish</option>
+              </select>
+            </div>
+            <div class="nav1-item search">
+              <input
+                type="search"
+                id="search"
+                name="query"
+                placeholder="Search AA.com&reg"
+              />
+            </div>
+          </div>
+          <div class="nav-container-2">
+            <img class="logo" src="../assets/aa-logo.png" />
+            <div class="nav2-item plan-travel">PLAN TRAVEL</div>
+            <div class="nav2-item travel-info">TRAVEL INFORMATION</div>
+
+            <div class="nav2-item advantage">AADVANTAGE</div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="text-container">
+      <div class="care-text">
+        At American Airline, we care about your child's safety...
+      </div>
+      <div class="text-text">
+        We understand that the traveling of unaccompanied minors is a major
+        concern you, the parent. This is why we have developed this solution
+        that goes the extra mile to ensure your child's safety and provide peace
+        of mind for both you and your child. Our Unaccompanied Minor Assistance
+        Application is designed with one primary goal: to make every
+        unaccompanied minor's journey as safe and comfortable as possible. From
+        check-in to arrival, our application offers a range of features that
+        prioritize your child's well-being.
+      </div>
+    </div>
+    <div id="get-started-container">
+      <button id="get-started">Get Started</button>
+    </div>
+
+    <div class="main-content-container">
+      <div class="main-img-container">
+        <img class="main-img" src="../assets/black-woman.jpg" />
+      </div>
+
+      <div class="input-field">
+        <input type="text" placeholder="Flight number" />
+        <input type="text" placeholder="AAdvantage number" />
+        <input type="tel" placeholder="Your phone number" />
+        <button id="button">Continue</button>
+      </div>
+    </div>
+    <!--
+    <div class="map">
+      
+      <style>
+        #chartdiv {
+          width: 100%;
+          height: 400px;
+          max-width: 200%;
+          align-items: center;
+          align-self: center;
+        }
+      </style>
+
+      <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+      <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+      <script>
+        am5.ready(function () {
+          // Create root element
+          // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+          var root = am5.Root.new("chartdiv");
+
+          // Set themes
+          // https://www.amcharts.com/docs/v5/concepts/themes/
+          root.setThemes([am5themes_Animated.new(root)]);
+
+          // Create the map chart
+          // https://www.amcharts.com/docs/v5/charts/map-chart/
+          var chart = root.container.children.push(
+            am5map.MapChart.new(root, {
+              panX: "rotateX",
+              panY: "rotateY",
+              projection: am5map.geoOrthographic(),
+              paddingBottom: 20,
+              paddingTop: 20,
+              paddingLeft: 20,
+              paddingRight: 20,
+            })
+          );
+
+          // Create main polygon series for countries
+          // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/
+          var polygonSeries = chart.series.push(
+            am5map.MapPolygonSeries.new(root, {
+              geoJSON: am5geodata_worldLow,
+            })
+          );
+
+          polygonSeries.mapPolygons.template.setAll({
+            tooltipText: "{name}",
+            toggleKey: "active",
+            interactive: true,
+          });
+
+          polygonSeries.mapPolygons.template.states.create("hover", {
+            fill: root.interfaceColors.get("primaryButtonHover"),
+          });
+
+          // Create series for background fill
+          // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/#Background_polygon
+          var backgroundSeries = chart.series.push(
+            am5map.MapPolygonSeries.new(root, {})
+          );
+          backgroundSeries.mapPolygons.template.setAll({
+            fill: root.interfaceColors.get("alternativeBackground"),
+            fillOpacity: 0.1,
+            strokeOpacity: 0,
+          });
+          backgroundSeries.data.push({
+            geometry: am5map.getGeoRectangle(90, 180, -90, -180),
+          });
+
+          // Create graticule series
+          // https://www.amcharts.com/docs/v5/charts/map-chart/graticule-series/
+          var graticuleSeries = chart.series.push(
+            am5map.GraticuleSeries.new(root, {})
+          );
+          graticuleSeries.mapLines.template.setAll({
+            strokeOpacity: 0.1,
+            stroke: root.interfaceColors.get("alternativeBackground"),
+          });
+
+          // Rotate animation
+          chart.animate({
+            key: "rotationX",
+            from: 0,
+            to: 360,
+            duration: 30000,
+            loops: Infinity,
+          });
+
+          // Make stuff animate on load
+          chart.appear(1000, 100);
+        }); // end am5.ready()
+      </script>
+
+      <div id="chartdiv"></div>
+    </div> -->
+  </body>
+</html>
