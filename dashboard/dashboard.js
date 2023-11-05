@@ -26,12 +26,11 @@ notif.addEventListener(click, () => {
   alert("Your child's flight is now boarding");
 });
 
-let modal = document.querySelector(".modal")
+let modal = document.querySelector(".modal");
 
-
-modal.addEventListener("click", ()=>{
-    if (modal.style.display === "none"){
-        modal.style.display = "block"
-        modal.innerHTML = 
-    }
-})
+notif.addEventListeners("click", () => {
+  if (modal.style.display === "none") {
+    modal.style.display = "block";
+    modal.innerHTML = notif.innerHTML;
+  }
+});
