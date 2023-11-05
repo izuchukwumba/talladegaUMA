@@ -2,13 +2,6 @@ let chatButton = document.querySelector(".chat-button");
 let iframe = document.querySelector("iframe");
 
 chatButton.addEventListener("click", () => {
-  //   if (iframe.style.display === "none") {
-  //     iframe.style.display = "block";
-  //     chatButton.innerHTML = "Close Chat";
-  //   } else {
-  //     iframe.style.display = "none";
-  //   }
-
   if (iframe.style.opacity === "0") {
     iframe.style.opacity = "1";
     iframe.style.zIndex = "1";
@@ -18,19 +11,20 @@ chatButton.addEventListener("click", () => {
     iframe.style.zIndex = "-1";
     chatButton.innerHTML = "Chat Now";
   }
+  alert("Your Child's Flight is Now Boarding");
 });
 
-let notif = document.querySelector(".notif");
-
-notif.addEventListener(click, () => {
-  alert("Your child's flight is now boarding");
+document.querySelector(".plan-travel").addEventListener("click", () => {
+  alert("Your Child's Flight is Now Boarding");
 });
 
-let modal = document.querySelector(".modal");
+document.querySelector(".travel-info").addEventListener("click", () => {
+  alert("Your Child Is Mid-Flight and Everything is Alright!");
+});
 
-notif.addEventListeners("click", () => {
-  if (modal.style.display === "none") {
-    modal.style.display = "block";
-    modal.innerHTML = notif.innerHTML;
-  }
+document.querySelector(".advantage").addEventListener("click", () => {
+  alert("Your Child's Flight Arrives in 10 Minutes");
+});
+document.querySelector(".login").addEventListener("click", () => {
+  alert("Plane Landed. Please Head To Baggage Claim.");
 });
