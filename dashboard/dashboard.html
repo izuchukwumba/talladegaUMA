@@ -11,8 +11,10 @@
       <nav>
         <div class="nav-container">
           <div class="nav-container-1">
-            <div class="nav1-item home">Home</div>
-            <button class="login">LOG&nbsp;IN</button>
+            <a href="https://www.aa.com/homePage.do"
+              ><div class="nav1-item home">Home</div></a
+            >
+            <!-- <button class="login">LOG&nbsp;IN</button> -->
             <div class="nav1-item english">
               <img class="english-flag" src="../assets/english-flag.svg" />
               <select id="dropdown" name="language">
@@ -38,6 +40,7 @@
             <div class="nav2-item travel-info">TRAVEL INFORMATION</div>
 
             <div class="nav2-item advantage">AADVANTAGE</div>
+            <button class="login">LOG&nbsp;IN</button>
           </div>
         </div>
       </nav>
@@ -75,9 +78,21 @@
           Need help? Got a question? Please kindly reach out to us now.
         </div>
 
-        <button class="button more-info-button">Get Help</button>
+        <button class="button more-info-button">
+          <a
+            href="https://www.aa.com/i18n/customer-service/contact-american/american-customer-service.jsp?anchorEvent=false&from=footer"
+            >Get Help</a
+          >
+        </button>
       </div>
     </div>
+    <div class="notif boading">boarding</div>
+    <div class="notif takeoff">take off</div>
+    <div class="notif half">half way</div>
+    <div class="notif landing">landing</div>
+
+    <div class="modal"></div>
+
     <iframe src="http://localhost:3000" width="330" height="510"></iframe>
     <script src="dashboard.js"></script>
   </body>

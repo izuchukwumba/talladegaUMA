@@ -19,3 +19,19 @@ chatButton.addEventListener("click", () => {
     chatButton.innerHTML = "Chat Now";
   }
 });
+
+let notif = document.querySelector(".notif");
+
+notif.addEventListener(click, () => {
+  alert("Your child's flight is now boarding");
+});
+
+let modal = document.querySelector(".modal")
+
+
+modal.addEventListener("click", ()=>{
+    if (modal.style.display === "none"){
+        modal.style.display = "block"
+        modal.innerHTML = 
+    }
+})
