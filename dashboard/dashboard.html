@@ -4,13 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="" />
+    <link rel="stylesheet" type="text/css" href="dashboard.css" />
   </head>
   <body>
     <header>
       <nav>
-        <img class="logo" src="../assets/aa-logo.png" />
+        <div class="nav-container">
+          <div class="nav-container-1">
+            <div class="nav1-item home">Home</div>
+            <button class="login">LOG&nbsp;IN</button>
+            <div class="nav1-item english">
+              <img class="english-flag" src="../assets/english-flag.svg" />
+              <select id="dropdown" name="language">
+                <option value="apple">English</option>
+                <option value="banana">French</option>
+                <option value="cherry">Spanish</option>
+                <option value="orange">German</option>
+                <option value="strawberry">Finnish</option>
+              </select>
+            </div>
+            <div class="nav1-item search">
+              <input
+                type="search"
+                id="search"
+                name="query"
+                placeholder="Search AA.com&reg"
+              />
+            </div>
+          </div>
+          <div class="nav-container-2">
+            <img class="logo" src="../assets/aa-logo.png" />
+            <div class="nav2-item plan-travel">PLAN TRAVEL</div>
+            <div class="nav2-item travel-info">TRAVEL INFORMATION</div>
+
+            <div class="nav2-item advantage">AADVANTAGE</div>
+          </div>
+        </div>
       </nav>
     </header>
+    <div class="content-container">
+      <div class="content-div content-flight-info">
+        <div class="content-text">
+          Check out the comprehensive information about your child's flight. You
+          are totally in control here.
+        </div>
+        <button class="button flight-info-button">See Flight Info</button>
+      </div>
+      <div class="content-div content-chat">
+        <div class="content-text">
+          Get an extra level of assurance and peace of mind by chatting with
+          your child. Learn aboout how they are faring.
+        </div>
+        <button class="button chat-button">Chat now</button>
+      </div>
+
+      <div class="content-div content-baggage">
+        <div class="content-text">
+          You can now track your child's baggage for faster retrieval at baggage
+          claim.
+        </div>
+        <button class="button chat-baggae">Track Baggage</button>
+      </div>
+
+      <div class="content-div content-more-info">
+        <div class="content-text">
+          Need help? Got a question? Please kindly reach out to us now.
+        </div>
+
+        <button class="button more-info-button">Get Help</button>
+      </div>
+    </div>
   </body>
 </html>
