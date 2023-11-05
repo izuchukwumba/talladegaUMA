@@ -5,25 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="dashboard.css" />
-
-    <link
-      rel="stylesheet prefetch"
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
-    />
-    <link
-      rel="stylesheet prefetch"
-      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css"
-    />
-    <link
-      href="../chat-feature/public/css/normalize.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="../chat-feature/public/css/style.css"
-      rel="stylesheet"
-      type="text/css"
-    />
   </head>
   <body>
     <header>
@@ -74,7 +55,7 @@
           Get an extra level of assurance and peace of mind by chatting with
           your child. Learn aboout how they are faring.
         </div>
-        <button class="button chat-button">Chat now</button>
+        <button class="button chat-button">Chat Now</button>
       </div>
 
       <div class="content-div content-baggage">
@@ -82,7 +63,11 @@
           You can now track your child's baggage for faster retrieval at baggage
           claim.
         </div>
-        <button class="button chat-baggae">Track Baggage</button>
+        <button class="button chat-baggae">
+          <a href="https://www.aa.com/travelInformation/bag/tracker/"
+            >Track Baggage</a
+          >
+        </button>
       </div>
 
       <div class="content-div content-more-info">
@@ -93,32 +78,7 @@
         <button class="button more-info-button">Get Help</button>
       </div>
     </div>
-
-    <div class="chat">
-      <div class="chat-title">
-        <h1>We are Online</h1>
-        <figure class="avatar">
-          <img src="..chat-feature/public/img/female-placeholder.jpg" />
-          <span class="chat-message-counter">3</span>
-        </figure>
-        <span class="online-bullet"></span>
-      </div>
-      <div class="messages">
-        <div class="messages-content"></div>
-      </div>
-      <div class="message-box">
-        <textarea
-          type="text"
-          class="message-input"
-          placeholder="Type message..."
-        ></textarea>
-        <button type="submit" class="message-submit">Send</button>
-      </div>
-    </div>
-    <div class="bg"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
-    <script src="../chat-feature/public/js/chat.js"></script>
+    <iframe src="http://localhost:3000" width="330" height="510"></iframe>
+    <script src="dashboard.js"></script>
   </body>
 </html>

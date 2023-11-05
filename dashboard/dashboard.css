@@ -123,3 +123,21 @@ nav {
   color: #fff;
   cursor: pointer;
 }
+
+iframe {
+  border: 1px solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  opacity: 0;
+  /* display: block; */
+  z-index: -1;
+
+  transition: opacity 0.5s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
