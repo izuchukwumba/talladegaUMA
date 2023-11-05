@@ -1,0 +1,50 @@
+## Flight Tracker Web App Documentation
+
+### Introduction
+The Flight Tracker Web App is a powerful application designed to track the flight and provide real-time updates to parents about the whereabouts of their unaccompanied minor child. The app utilizes the OpenSky API to retrieve flight data in JSON format and leverages the Pandas library for data analysis and manipulation. Additionally, the app incorporates the Bokeh library to visualize a dynamic map that updates in real-time, providing an interactive and engaging experience for users. The frontend of the application is built using HTML, CSS, JavaScript, and Tquery, allowing for a seamless user interface.
+
+### Features
+1. Live Flight Tracking: The Flight Tracker Web App utilizes the OpenSky API to fetch flight data in real-time. The app continuously retrieves JSON-formatted flight data, including the aircraft's latitude, longitude, altitude, and other relevant information.
+
+2. Data Analysis: The flight data obtained from the OpenSky API is processed and analyzed using the Pandas library. This allows for efficient data manipulation, filtering, and sorting to extract meaningful information about the flight trajectory and status.
+
+3. Real-time Map Visualization: The Bokeh library is used to create an interactive and dynamic map that displays the flight's position and trajectory. The map is updated every 5 seconds, providing users with a visually engaging representation of the flight's progress.
+
+4. Live Chat: The Flight Tracker Web App features a live chat functionality that enables communication between parents and their unaccompanied minor child. This chat system allows parents to stay in touch with their child throughout the flight duration, providing reassurance and peace of mind.
+
+5. Flight Status Notifications: The app sends real-time notifications to parents regarding the flight's status. Parents receive updates about any significant changes in the flight, such as delays, diversions, or changes in altitude. These notifications help parents stay informed about their child's journey and ensure their safety.
+
+6. Premium API Access: The Flight Tracker Web App utilizes the premium version of the OpenSky API, which provides enhanced features and capabilities. With premium access, the app can access a wider range of flight data and obtain more detailed information about each aircraft, including airline, registration, and flight number.
+
+### Technology Stack
+The Flight Tracker Web App utilizes a combination of technologies to provide a robust and efficient user experience. The key technologies used in the development of this application include:
+
+1. OpenSky API: The OpenSky API serves as the primary data source for retrieving real-time flight data. It provides access to a comprehensive database of flights worldwide, allowing the app to track and monitor the child's flight accurately.
+
+2. Pandas: The Pandas library is used for data analysis and manipulation. It enables efficient processing of the flight data obtained from the OpenSky API, facilitating data filtering, sorting, and extraction of relevant information.
+
+3. Bokeh: Bokeh is a powerful data visualization library used to create dynamic and interactive maps. In the Flight Tracker Web App, Bokeh is used to generate a visually appealing map that updates in real-time, providing users with a live view of the flight's progress.
+
+4. HTML, CSS, and JavaScript: These web development technologies are utilized to build the frontend of the application. HTML is used for creating the structure and content of the web pages, CSS is used for styling and layout, and JavaScript is used to add interactivity and dynamic behavior to the app.
+
+5. Tquery: Tquery is a JavaScript library that simplifies DOM manipulation and provides a convenient way to interact with HTML elements. It enhances the development process by allowing seamless integration between JavaScript and HTML, resulting in a more efficient and maintainable codebase.
+
+### Usage
+To use the Flight Tracker Web App, follow these steps:
+
+1. Access the web app using a web browser by navigating to the provided URL or hosting the app on a local server.
+
+2. Upon launching the app, you will be prompted to enter the flight details, including the flight number and departure date.
+
+3. Once the flight details are entered, the app will start tracking the flight in real-time using the OpenSky API.
+
+4. The app will display the flight's current position on the dynamic map, which updates every 5 seconds to provide the latest information.
+
+5. Parents can use the live chat feature to communicate with their unaccompanied minor child during the flight. Messages sent through the chat are delivered instantly, ensuring continuous communication.
+
+6. The Flight Tracker Web App will send notifications to parents regarding any significant updates or changes in the flight's status. This includes notifications about delays, diversions, or changes in altitude, providing parents with timely information.
+
+7. Parents can continue tracking the flight and utilizing the app's features until the flight reaches its destination.
+
+### Conclusion
+The Flight Tracker Web App offers a comprehensive solution for parents to monitor the whereabouts of their unaccompanied minor child during a flight. By leveraging the OpenSky API, Pandas, Bokeh, and a combination of web technologies, the app provides real-time flight tracking, data analysis, interactive map visualization, live chat functionality,and flight status notifications. With its user-friendly interface and premium API access, the app ensures an enhanced and secure experience for parents, allowing them to stay connected with their child throughout the journey. The Flight Tracker Web App is a reliable and efficient tool that prioritizes the safety and peace of mind of parents and their unaccompanied minor children during air travel.
