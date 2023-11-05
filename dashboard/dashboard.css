@@ -170,3 +170,17 @@ a {
   background-color: #fff;
   color: #0078d2;
 }
+
+.heading {
+  color: #0078d2;
+  font-weight: 300;
+  font-size: 200%;
+  padding: 20px 25px;
+}
+
+.subheading {
+  color: #0078d2;
+  font-weight: 300;
+  font-size: 100%;
+  padding: 10px 25px;
+}
