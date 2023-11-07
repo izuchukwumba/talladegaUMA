@@ -1,6 +1,6 @@
 # Unaccompanied Minor Assistance
 
-![Unaccompanied Minor Assistance](https://github.com/izuchukwumba/talladegaUMA/assets/images/aa-logo.png)
+![Unaccompanied Minor Assistance](https://github.com/izuchukwumba/talladegaUMA/assets/aa-logo.png)
 
 Welcome to the Unaccompanied Minor Assistance (UMA) project! This is an end-to-end web application designed to provide assistance and ensure the safety of unaccompanied minors traveling by air. It also keeps parents reassured throughout the duration of the flight through various features, including live chat communication between parents and children and automated notifications via phone systems and text messaging.
 
